@@ -1,6 +1,7 @@
 package com.banjvduo.demo.controller;
 
 import com.banjvduo.demo.model.User;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
@@ -16,6 +17,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Api(value = "UserController", description = "用户信息模块")
 @RestController
 @RequestMapping(value = "/users")
 public class UserController {
